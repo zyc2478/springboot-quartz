@@ -7,12 +7,14 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="springboot-api" />
+        <module name="springboot-job" />
         <module name="springboot-quartz" />
         <module name="springboot-utils" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="springboot-api" target="1.8" />
+      <module name="springboot-job" target="1.8" />
       <module name="springboot-quartz" target="1.5" />
       <module name="springboot-utils" target="1.8" />
     </bytecodeTargetLevel>

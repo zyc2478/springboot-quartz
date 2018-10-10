@@ -1,0 +1,39 @@
+server:
+  context-path: /quartz
+  port: 8080
+  ession-timeout: 60
+#server.address=192.168.1.66
+
+  tomcat:
+    max-threads: 100
+    uri-encoding: UTF-8
+
+spring:
+  thymeleaf:
+    mode: LEGACYHTML5
+    cache: false
+    cache-period: 0
+    template:
+      cache: false
+  devtools:
+    livereload:
+      enabled: true
+
+  mvc:
+    static-path-pattern: /**
+
+
+  datasource:
+    url: jdbc:mysql://59.110.169.156:3306/bbd?useSSL=true&autoReconnect=true&verifyServerCertificate=false&tinyInt1isBit=false&useUnicode=true&characterEncoding=utf8
+    username: root
+    password: 12345
+    driver-class-name: com.mysql.jdbc.Driver
+
+mybatis:
+  type-aliases-package: com.zyc.springboot.entity
+  mapper-locations: classpath:mapper/*.xml
+
+init:
+  mode: 0
+  begin: 2018-09-01
+  end: 2018-09-30
